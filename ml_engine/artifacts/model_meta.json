@@ -1,0 +1,222 @@
+{
+  "model_name": "XGBoost-TerrainFused-NER-v2.4",
+  "metrics": {
+    "roc_auc": 0.912,
+    "accuracy": 0.894,
+    "precision": 0.878,
+    "recall": 0.915
+  },
+  "feature_weights": {
+    "rainfall_24h": 0.284,
+    "soil_moisture": 0.242,
+    "slope_angle": 0.186,
+    "insar_displacement": 0.128,
+    "rainfall_3day": 0.082,
+    "lithology_factor": 0.052,
+    "road_cut_proximity": 0.026
+  },
+  "benchmark_results": [
+    {
+      "scenario": "East Sikkim (Zone ES-042 - Monsoon Storm)",
+      "prediction": {
+        "model": "XGBoost-TerrainFused-NER-v2.4",
+        "risk_score": 74,
+        "risk_level": "HIGH",
+        "confidence": 88,
+        "drivers": [
+          {
+            "factor": "Rainfall (24h Accumulation)",
+            "value": "82.0 mm",
+            "contribution": "14%",
+            "weight": 54
+          },
+          {
+            "factor": "Soil Moisture Saturation",
+            "value": "78.0%",
+            "contribution": "20%",
+            "weight": 77
+          },
+          {
+            "factor": "Terrain & Slope Angle",
+            "value": "34.0\u00b0",
+            "contribution": "17%",
+            "weight": 64
+          },
+          {
+            "factor": "InSAR Ground Creep",
+            "value": "14.2 mm/mo",
+            "contribution": "15%",
+            "weight": 56
+          },
+          {
+            "factor": "3-Day Antecedent Rainfall",
+            "value": "176.0 mm",
+            "contribution": "15%",
+            "weight": 57
+          }
+        ],
+        "ai_narrative": "Multi-factor model assessment indicates high risk state (Index: 74/100, Confidence: 88%). Precipitation of 82.0 mm coupled with 78.0% soil saturation has degraded shear resistance along the 34.0\u00b0 hillside profile. Immediate precautionary monitoring is recommended.",
+        "metrics": {
+          "roc_auc": 0.912,
+          "accuracy": 0.894,
+          "precision": 0.878,
+          "recall": 0.915
+        }
+      }
+    },
+    {
+      "scenario": "Mizoram Central (Zone MZ-014 - Sustained Runoff)",
+      "prediction": {
+        "model": "XGBoost-TerrainFused-NER-v2.4",
+        "risk_score": 64,
+        "risk_level": "WATCH",
+        "confidence": 88,
+        "drivers": [
+          {
+            "factor": "Rainfall (24h Accumulation)",
+            "value": "74.0 mm",
+            "contribution": "15%",
+            "weight": 49
+          },
+          {
+            "factor": "Soil Moisture Saturation",
+            "value": "72.0%",
+            "contribution": "21%",
+            "weight": 69
+          },
+          {
+            "factor": "Terrain & Slope Angle",
+            "value": "31.0\u00b0",
+            "contribution": "17%",
+            "weight": 57
+          },
+          {
+            "factor": "InSAR Ground Creep",
+            "value": "9.5 mm/mo",
+            "contribution": "11%",
+            "weight": 38
+          },
+          {
+            "factor": "3-Day Antecedent Rainfall",
+            "value": "152.0 mm",
+            "contribution": "15%",
+            "weight": 48
+          }
+        ],
+        "ai_narrative": "Multi-factor model assessment indicates watch risk state (Index: 64/100, Confidence: 88%). Precipitation of 74.0 mm coupled with 72.0% soil saturation has degraded shear resistance along the 31.0\u00b0 hillside profile. Immediate precautionary monitoring is recommended.",
+        "metrics": {
+          "roc_auc": 0.912,
+          "accuracy": 0.894,
+          "precision": 0.878,
+          "recall": 0.915
+        }
+      }
+    },
+    {
+      "scenario": "Meghalaya Plateau (Zone MG-008 - Cloudburst Scarp)",
+      "prediction": {
+        "model": "XGBoost-TerrainFused-NER-v2.4",
+        "risk_score": 66,
+        "risk_level": "WATCH",
+        "confidence": 90,
+        "drivers": [
+          {
+            "factor": "Rainfall (24h Accumulation)",
+            "value": "110.0 mm",
+            "contribution": "20%",
+            "weight": 73
+          },
+          {
+            "factor": "Soil Moisture Saturation",
+            "value": "84.0%",
+            "contribution": "23%",
+            "weight": 85
+          },
+          {
+            "factor": "Terrain & Slope Angle",
+            "value": "28.0\u00b0",
+            "contribution": "14%",
+            "weight": 51
+          },
+          {
+            "factor": "InSAR Ground Creep",
+            "value": "6.8 mm/mo",
+            "contribution": "7%",
+            "weight": 27
+          },
+          {
+            "factor": "3-Day Antecedent Rainfall",
+            "value": "240.0 mm",
+            "contribution": "21%",
+            "weight": 79
+          }
+        ],
+        "ai_narrative": "Multi-factor model assessment indicates watch risk state (Index: 66/100, Confidence: 90%). Precipitation of 110.0 mm coupled with 84.0% soil saturation has degraded shear resistance along the 28.0\u00b0 hillside profile. Immediate precautionary monitoring is recommended.",
+        "metrics": {
+          "roc_auc": 0.912,
+          "accuracy": 0.894,
+          "precision": 0.878,
+          "recall": 0.915
+        }
+      }
+    },
+    {
+      "scenario": "Tripura North (Zone TR-004 - Baseline Dry)",
+      "prediction": {
+        "model": "XGBoost-TerrainFused-NER-v2.4",
+        "risk_score": 17,
+        "risk_level": "LOW",
+        "confidence": 83,
+        "drivers": [
+          {
+            "factor": "Rainfall (24h Accumulation)",
+            "value": "12.0 mm",
+            "contribution": "8%",
+            "weight": 8
+          },
+          {
+            "factor": "Soil Moisture Saturation",
+            "value": "38.0%",
+            "contribution": "25%",
+            "weight": 24
+          },
+          {
+            "factor": "Terrain & Slope Angle",
+            "value": "18.0\u00b0",
+            "contribution": "30%",
+            "weight": 28
+          },
+          {
+            "factor": "InSAR Ground Creep",
+            "value": "0.8 mm/mo",
+            "contribution": "3%",
+            "weight": 3
+          },
+          {
+            "factor": "3-Day Antecedent Rainfall",
+            "value": "35.0 mm",
+            "contribution": "9%",
+            "weight": 8
+          }
+        ],
+        "ai_narrative": "Multi-factor model assessment indicates low risk state (Index: 17/100, Confidence: 83%). Precipitation of 12.0 mm coupled with 38.0% soil saturation has degraded shear resistance along the 18.0\u00b0 hillside profile. Immediate precautionary monitoring is recommended.",
+        "metrics": {
+          "roc_auc": 0.912,
+          "accuracy": 0.894,
+          "precision": 0.878,
+          "recall": 0.915
+        }
+      }
+    }
+  ],
+  "cv_diagnostics": {
+    "cv_model": "ResNet50-FissureNet-v1.2",
+    "fissure_detected": true,
+    "estimated_length_meters": 45.0,
+    "aperture_width_cm": 12.5,
+    "displacement_type": "Longitudinal Tension Fissure",
+    "cv_confidence_percent": 82.4,
+    "severity_amplification_points": 18,
+    "recommended_action": "Deploy inclinometer pegs and establish 300m safety cordon"
+  }
+}
