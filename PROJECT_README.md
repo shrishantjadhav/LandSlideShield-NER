@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LandslideShield NER
 ### AI-Powered Landslide Early Warning, Risk Intelligence & Disaster Response Platform for the North Eastern Region
 **Tagline:** *Predict Risk. Explain Threats. Protect Communities.*
@@ -126,3 +127,6 @@ npm run dev
 
 The application will be accessible at:
 `http://localhost:5173/` or `http://127.0.0.1:5173/`
+=======
+# LandSlideShield-NER
+>>>>>>> c4791e66255e373f7982a90eab843f46e646ace0
